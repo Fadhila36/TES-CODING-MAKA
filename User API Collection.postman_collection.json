@@ -118,7 +118,7 @@
 						{
 							"key": "image",
 							"type": "file",
-							"src": "path/to/your/image.jpg"
+							"src": "/C:/Users/fadhi/Downloads/Baby Taylor Finn.png"
 						}
 					]
 				},
@@ -165,7 +165,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "1",
+							"value": "2",
 							"description": "User ID"
 						}
 					]
@@ -176,14 +176,20 @@
 		{
 			"name": "Update User",
 			"request": {
-				"method": "PUT",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
 						{
 							"key": "name",
-							"value": "wahyuadin 2",
+							"value": "Fadhila",
 							"type": "text"
 						},
 						{
@@ -195,11 +201,16 @@
 							"key": "image",
 							"type": "file",
 							"src": "postman-cloud:///1eed9859-4319-4820-9121-dfc36e1ed323"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/users/1",
+					"raw": "http://127.0.0.1:8000/api/v1/users/3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -212,7 +223,7 @@
 						"api",
 						"v1",
 						"users",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -242,7 +253,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "1",
+							"value": "4",
 							"description": "User ID"
 						}
 					]
